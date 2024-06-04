@@ -50,6 +50,7 @@ namespace RockPaperScissors
                          choice == "quit"
                          )
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     System.Console.WriteLine("Good bye...");
                     return;
                 }
@@ -84,7 +85,10 @@ namespace RockPaperScissors
                     Console.Clear();
 
                     System.Console.WriteLine($"Computer chose: {computerChoice}!");
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     System.Console.WriteLine("Draw");
+                    Console.ResetColor();
+
                     
                 }
                 else if ((choice == rock && computerChoice == scissors) ||
@@ -95,7 +99,10 @@ namespace RockPaperScissors
                     Console.Clear();
 
                     System.Console.WriteLine($"Computer chose: {computerChoice}!");
+                    Console.ForegroundColor = ConsoleColor.Green;
                     System.Console.WriteLine("You Win.");
+                    Console.ResetColor();
+
                 }
                 else
                 {
@@ -103,7 +110,10 @@ namespace RockPaperScissors
                     Console.Clear();
                     
                     System.Console.WriteLine($"Computer chose: {computerChoice}!");
+                    Console.ForegroundColor = ConsoleColor.Red;
                     System.Console.WriteLine("You lose!");
+                    Console.ResetColor();
+
                 }
 
                 System.Console.WriteLine();
