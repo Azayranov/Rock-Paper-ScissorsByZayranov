@@ -81,20 +81,27 @@ namespace RockPaperScissors
                 if (choice == computerChoice)
                 {
                     drawCounter++;
+                    Console.Clear();
+
                     System.Console.WriteLine($"Computer chose: {computerChoice}!");
                     System.Console.WriteLine("Draw");
+                    
                 }
                 else if ((choice == rock && computerChoice == scissors) ||
                         (choice == paper && computerChoice == rock ) ||
                         (choice == scissors && computerChoice == paper))
                 {
                     winCounter++;
+                    Console.Clear();
+
                     System.Console.WriteLine($"Computer chose: {computerChoice}!");
                     System.Console.WriteLine("You Win.");
                 }
                 else
                 {
                     loseCounter++;
+                    Console.Clear();
+                    
                     System.Console.WriteLine($"Computer chose: {computerChoice}!");
                     System.Console.WriteLine("You lose!");
                 }
